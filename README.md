@@ -2,6 +2,7 @@
 
 This script is free, if caught sold, this script will be deleted immediately.
 Don't forget to follow my github
+
 Script ini gratis, Jika ketahuan di jual, Script ini akan langsung di hapus.
 Jangan lupa untuk mengikuti github ku
 * My WhatsApp [`Click Here`](https://wa.me/62895330379186?text=Assalamualaikum)
