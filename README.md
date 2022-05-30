@@ -219,7 +219,6 @@ Semua yang selalu mendukung
 [![Chacax](https://github.com/Chacax.png?size=100)](https://github.com/Chacax)
 [![rahmad13](https://github.com/rahmad13.png?size=100)](https://github.com/rahmad13)
 
-NOTE: This project will not maintained after `7 June 2022`, that means no update. Feel free to anyone to continue this project :)
 
 Best Regards. Aine-MD
 
