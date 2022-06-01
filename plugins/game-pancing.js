@@ -82,7 +82,7 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 
                                 setTimeout(() => {
                                 m.reply(`Yuk mancing mania level easy lagi`)
-                                }, 500000) 
+                                }, 28800000) 
                                 setTimeout(() => {
                                 m.reply(`${hsl}`)
                                 }, 12000) 
@@ -174,7 +174,7 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
                                  
                                 setTimeout(() => {
                                 m.reply(`Yuk mancing mania level normal lagi`)
-                                }, 500000) 
+                                }, 28800000) 
                                 setTimeout(() => {
                                 m.reply(`${hsls}`)
                                 }, 12000) 
@@ -266,7 +266,7 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 
                                 setTimeout(() => {
                                 m.reply(`Yuk mancing mania level hard lagi`)
-                                }, 500000) 
+                                }, 28800000) 
                                 setTimeout(() => {
                                 m.reply(`${hslsh}`)
                                 }, 12000) 
@@ -358,7 +358,7 @@ let handler = async (m, { conn,usedPrefix, command, text, args }) => {
 
                                 setTimeout(() => {
                                 m.reply(`Yuk mancing mania level extreme lagi`)
-                                }, 500000) 
+                                }, 28800000) 
                                 setTimeout(() => {
                                 m.reply(`${hslse}`)
                                 }, 12000) 
