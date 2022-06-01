@@ -45,8 +45,8 @@ const getBuffer = async (url, options) => {
 		return res.data
 	} catch (e) {
 		console.log(`Error : ${e}`)
-	}*/
-}
+	}
+}*/
 
 
 
