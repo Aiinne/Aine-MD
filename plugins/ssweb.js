@@ -1,4 +1,4 @@
-const axios = require ("axios")
+/*const axios = require ("axios")
 const fetch = require('node-fetch')
 const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, command, args }) => {
@@ -45,12 +45,12 @@ const getBuffer = async (url, options) => {
 		return res.data
 	} catch (e) {
 		console.log(`Error : ${e}`)
-	}
+	}*/
 }
 
 
 
-/*let fetch = require('node-fetch')
+let fetch = require('node-fetch')
 let handler = async (m, { conn, command, args }) => {
   let full = /f$/i.test(command)
   if (!args[0]) return conn.reply(m.chat, 'Tidak ada url', m)
@@ -73,4 +73,4 @@ handler.botAdmin = false
 handler.fail = null
 
 module.exports = handler
-*/
+
