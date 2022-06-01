@@ -6,6 +6,7 @@ Don't forget to follow my github
 Script ini gratis, Jika ketahuan di jual, Script ini akan langsung di hapus.
 Jangan lupa untuk mengikuti github ku
 * My WhatsApp [`Click Here`](https://wa.me/62895330379186?text=Assalamualaikum)
+* My Facebook [`Click Here`](https://facebook.com/ainneboot)
 
 ## Heroku Buildpack
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aiinne/Aine-MD)
