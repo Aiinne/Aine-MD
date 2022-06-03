@@ -90,7 +90,7 @@ const logger = pino({
 }).child({ class: 'baileys'})
 
 const connectionOptions = {
-  version: [2, 2208, 14],
+  version: [2, 2218, 8],
   printQRInTerminal: true,
   auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
