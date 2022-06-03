@@ -24,7 +24,7 @@ const roles = {
   'Beginner': 0, 
   'Early Soldier': 5,
   'Commander': 10,
-  'Initial Commander' 15,
+  'Initial Commander': 15,
   'Commander Elite': 20,
   'Initial Commander Elit': 25,
   'Commander Elite Hero': 30,
