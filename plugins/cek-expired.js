@@ -7,7 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     var jumlahHari = 86400000 * args[0]
     var now = new Date() * 1
     
-    conn.reply(m.chat, `*${kki} ᴇxᴘɪʀᴇᴅ ${kka}*
+    conn.reply(m.chat, `*Expired Group:*
 ${msToDate(global.db.data.chats[who].expired - now)}`, m)
 }
 handler.help = ['cekexpired']
