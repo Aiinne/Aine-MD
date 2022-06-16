@@ -589,7 +589,8 @@ module.exports = {
             //     }
             // }
 
-            if (m.isBaileys) return
+            if (m.isBaileys) return 
+            if (m.chat.endsWith('broadcast')) return
             m.exp += Math.ceil(Math.random() * 10)
 
             let usedPrefix
