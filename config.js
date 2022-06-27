@@ -43,8 +43,8 @@ if (stickerpack.spackname == '') {
   var sticker_name = 'HambaAllah'
   var sticker_author = 'Bot'
 } else {
-  var sticker_name = stickerpack.spackname
-  var sticker_author = stickerpack.sauthor
+  var sticker_name = stickerpack.HambaAllah
+  var sticker_author = stickerpack.bot
 }
 
 const file_exif = "lib/exif.json"
