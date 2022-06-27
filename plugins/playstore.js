@@ -1,7 +1,7 @@
 const hx = require('hxz-api')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 //let txt = args.join` `
-if(!text) return reply('Text nya kak?')
+if(!text) return m.reply('Text nya kak?')
     /*        let play = await hx.playstore(`${txt}`)
             let store = '❉─────────────────────❉\n'
             for (let i of play){
