@@ -3,7 +3,7 @@ let handler = m => m
 
 handler.before = async function (m) {
 
-    if (m.chat.endsWith('broadcast')) return
+    if (m.chat.endsWith('broadcast') || m.key.remoteJid.endsWith('broadcast')) return
     if (m.fromMe) return
     if (m.isGroup) return
    // if (db.data.settings.groupOnly) return
