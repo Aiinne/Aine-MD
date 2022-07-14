@@ -62,7 +62,7 @@ wm = '© Aine'
 
 multiplier = 1000 // The higher, The harder levelup
 
-rpg {
+rpg = {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
