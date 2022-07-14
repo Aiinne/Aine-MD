@@ -1,15 +1,15 @@
 let fs = require('fs') 
 let chalk = require('chalk')
 
-global.owner = [
+owner = [
   ['62895330379186'],
   ['62895330379186'],
   ['62895330379186', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
-global.APIs = { // API Prefix
+mods = [] // Want some help?
+prems = [] // Premium user has unlimited limit
+APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
@@ -23,7 +23,7 @@ global.APIs = { // API Prefix
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   restapi: 'https://x-restapi.herokuapp.com'
 }
-global.APIKeys = { // APIKey Here
+APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'apikeyaine',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
@@ -56,13 +56,13 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-global.packname = sticker_name
-global.author = sticker_author
-global.wm = '© Aine'
+packname = sticker_name
+author = sticker_author
+wm = '© Aine'
 
-global.multiplier = 1000 // The higher, The harder levelup
+multiplier = 1000 // The higher, The harder levelup
 
-global.rpg = {
+rpg {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
