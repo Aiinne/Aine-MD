@@ -1,4 +1,3 @@
-const fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
     
 let block = await conn.fetchBlocklist()
