@@ -221,7 +221,7 @@ Semua yang selalu mendukung
 [![rahmad13](https://github.com/rahmad13.png?size=100)](https://github.com/rahmad13)
 [![Kangsad01](https://github.com/Kangsad01.png?size=100)](https://github.com/Kangsad01)
 [![Natx-C](https://github.com/Natx-C.png?size=100)](https://github.com/Natx-C)
-[![NurFyq](https://github.com/NurFyq.png?size=100)](https://github.com/NurFyq)
+[![NurFy](https://github.com/NurFyq.png?size=100)](https://github.com/NurFy)
 [![SudoAnirudh](https://github.com/SudoAnirudh.png?size=100)](https://github.com/SudoAnirudh)
 
 Best Regards. Aine-MD
