@@ -219,7 +219,10 @@ Semua yang selalu mendukung
 [![amiruldev20](https://github.com/amiruldev20.png?size=100)](https://github.com/amiruldev20)
 [![Chacax](https://github.com/Chacax.png?size=100)](https://github.com/Chacax)
 [![rahmad13](https://github.com/rahmad13.png?size=100)](https://github.com/rahmad13)
-
+[![Kangsad01](https://github.com/Kangsad01.png?size=100)](https://github.com/Kangsad01)
+[![Natx-C](https://github.com/Natx-C.png?size=100)](https://github.com/Natx-C)
+[![NurFyq](https://github.com/NurFyq.png?size=100)](https://github.com/NurFyq)
+[![SudoAnirudh](https://github.com/SudoAnirudh.png?size=100)](https://github.com/SudoAnirudh)
 
 Best Regards. Aine-MD
 
