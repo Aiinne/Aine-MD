@@ -42,7 +42,7 @@
     "dependencies": {
         "@adiwajshing/baileys": "github:adiwajshing/baileys",
         "@adiwajshing/keyed-db": "^0.2.4",
-        "@bochilteam/scraper": "0.0.81",
+        "@bochilteam/scraper": "^3.0.0",
         "acrcloud": "^1.4.0",
         "async": "^3.2.3",
         "awesome-phonenumber": "^2.73.0",
