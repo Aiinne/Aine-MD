@@ -55,7 +55,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   let json = await res.json()
    if (!json.status) throw json
   m.reply('Sedang diproses...')
-   conn.sendFile(m.chat, json.linkdownload, 'ig.mp4', '*© Aine*', m, { thumbnail: Buffer.alloc(0) })
+   conn.sendFile(m.chat, json.linkdownload, 'ig.mp4', '*© Zero*', m, { thumbnail: Buffer.alloc(0) })
 }
 
 handler.help = ['ig'].map(v => v + ' <url>')
