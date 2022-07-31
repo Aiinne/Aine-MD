@@ -1,20 +1,17 @@
-/*const axios = require ("axios")
+const axios = require ("axios")
 const fetch = require('node-fetch')
 const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, command, args }) => {
    if (!args[0]) return conn.reply(m.chat, 'Nothing url', m)
-   let buffer = await getBuffer(`https://shot.screenshotapi.net/screenshot?url=${args[0]}&full_page=true&fresh=true&output=image&file_type=png&wait_for_event=load`)
+   let buffer = await getBuffer(`https://rest-api-aiinne.herokuapp.com/api/tools/ssweb?link=${args[0]}`)
    conn.sendMessage(m.chat, { image: buffer, caption: wm }, { quoted: m })
 }
 handler.help = ['ssweb']
 handler.tags = ['internet']
 handler.command = /^ss(web)?f?$/i
-
 handler.limit = true
 handler.fail = null
-
 module.exports = handler
-
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
     fetch(url, options)
         .then(response => response.json())
@@ -26,8 +23,6 @@ const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
             reject(err)
         })
 })
-
-
 const getBuffer = async (url, options) => {
 	try {
 		options ? options : {}
@@ -46,10 +41,10 @@ const getBuffer = async (url, options) => {
 	} catch (e) {
 		console.log(`Error : ${e}`)
 	}
-}*/
+}
 
 
-
+/*
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, args }) => {
   let full = /f$/i.test(command)
@@ -72,5 +67,5 @@ handler.botAdmin = false
 
 handler.fail = null
 
-module.exports = handler
+module.exports = handler*/
 
