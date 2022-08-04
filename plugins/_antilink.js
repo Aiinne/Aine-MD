@@ -14,6 +14,7 @@ handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
     let isLinkconnGc = new RegExp(linkGC, 'i')
     let isgclink = isLinkconnGc.test(m.text)
     if (isgclink) return m.reply('*「 ANTI LINK 」*\n\nOrder denied, bot will not kick you.\nBecause the group link itself')
+    await conn.sendMessage(m.chat, { delete: m.key })
     await conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
   }
   return true
