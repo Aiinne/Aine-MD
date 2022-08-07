@@ -15,8 +15,8 @@ handler.before = function (m, { isAdmin, isBotAdmin }) {
       if (global.opts) {
         if (isAdmin || !isBotAdmin){		  
         }else{
-          m.reply('*Sticker detected*\nSorry I deleted 😅') // ganti text terserah kamu 
-          await this.sendMessage(m.chat, { delete: m.key })
+         // m.reply('*Sticker detected*\nSorry I deleted 😅') // ganti text terserah kamu 
+          this.sendMessage(m.chat, { delete: m.key })
           // this.groupParticipantsUpdate(m.chat, [m.sender], "remove")
         }return true
       }
