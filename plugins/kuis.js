@@ -1,14 +1,14 @@
-global.kuis = global.kuis ? global.kuis : {}
+conn.kuis = conn.kuis ? conn.kuis : {}
 let handler  = async (m, { conn, usedPrefix }) => {
 
   let id = m.chat
-  if (id in global.kuis) return conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', global.kuis[id][0])
-  global.kuis[id] = [
-    await conn.reply(m.chat,`「 KUIS 」\n\nPertanyaan :\n${pickRandom(global.kuis)}\n\nWaktu : 30.00 Detik\nBonus : 5000 XP`, m),
+  if (id in conn.kuis) return conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.kuis[id][0])
+  conn.kuis[id] = [
+    await conn.reply(m.chat,`「 KUIS 」\n\nPertanyaan :\n${pickRandom(kuis)}\n\nWaktu : 30.00 Detik\nBonus : 5000 XP`, m),
     kuis, 4,
     setTimeout(() => {
-      if (global.kuis[id]) conn.sendButton(m.chat, `Waktu habis!\n\nCoba Lagi Lain Waktu`, wm, null, [['Kuis', '.kuis']], m)
-      delete global.kuis[id]
+      if (conn.kuis[id]) conn.sendButton(m.chat, `Waktu habis!\n\nCoba Lagi Lain Waktu`, wm, null, [['Kuis', '.kuis']], m)
+      delete conn.kuis[id]
     }, 30000)
   ]
 }
@@ -27,7 +27,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.kuis = [
+const kuis = [
 'Pemain bola apa yang beratnya 3 kg?',
 'Penyanyi luar negeri yang suka sepeda’an ?',
 'Penyanyi yang rambutnya gak lurus?',
