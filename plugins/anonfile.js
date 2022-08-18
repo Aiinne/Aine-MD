@@ -1,5 +1,5 @@
 /*
-AnonFiles Uploader
+AnonFiles Uploader @balhisyhrl
 */
 const axios = require('axios')
 const anonfile = require('anonfile-lib')
