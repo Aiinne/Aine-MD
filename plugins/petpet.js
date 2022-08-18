@@ -1,5 +1,5 @@
 /*
-Made by https://github.com/balhisyhrl
+PetPet GIF Generator by https://github.com/balhisyhrl
 */
 const uploadImage = require('../lib/uploadImage')
 const fetch = require('node-fetch')
