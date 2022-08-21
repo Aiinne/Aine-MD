@@ -1,27 +1,3 @@
-/*let handler = async (m, { conn, text }) => {
-
-    let who
-    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
-    else who = m.chat
-    if (!who) throw `tag member!`
-    if (global.prems.includes(who.split`@`[0])) throw 'dia sudah premium!'
-    global.prems.push(`${who.split`@`[0]}`)
-    conn.reply(m.chat, `@${who.split`@`[0]} Selamat kamu menjadi user premium`, m, {
-        contextInfo: {
-            mentionedJid: [who]
-        }
-    })
-
-}
-handler.help = ['addprem [@user]']
-handler.tags = ['owner']
-handler.command = /^(add|tambah|\+)prem$/i
-
-handler.rowner = true
-
-module.exports = handler*/
-
-
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, text, usedPrefix }) => {
   function no(number){
@@ -38,11 +14,11 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   var jumlahHari = 86400000 * hl[1]
   // var jumlahHari = 1000 * text
   var now = new Date() * 1
-  global.db.data.users[hl[0]].premium = true
-  if (now < global.db.data.users[hl[0]].premiumDate) global.db.data.users[hl[0]].premiumDate += jumlahHari
-  else global.db.data.users[hl[0]].premiumDate = now + jumlahHari
-  conn.reply(m.chat,`*❏ UPGRADE PREMIUM*\n\nBerhasil menambahkan akses premium kepada *@${hl[0].split('@')[0]}* selama *${hl[1]} hari*.\n\n*Premium : ${msToDate(global.db.data.users[hl[0]].premiumDate - now)}*`,m,{ contextInfo: { mentionedJid: [hl[0]] } })
-  conn.reply(hl[0],`*❏ UPGRADE PREMIUM*\n\nBerhasil menambahkan akses premium kepada *@${hl[0].split('@')[0]}* selama *${hl[1]} hari*.\n\n*Premium : ${msToDate(global.db.data.users[hl[0]].premiumDate - now)}*`,m,{ contextInfo: { mentionedJid: [hl[0]] } }) 
+  db.data.users[hl[0]].premium = true
+  if (now < db.data.users[hl[0]].premiumDate) db.data.users[hl[0]].premiumDate += jumlahHari
+  else db.data.users[hl[0]].premiumDate = now + jumlahHari
+  conn.reply(m.chat,`*❏ UPGRADE PREMIUM*\n\nBerhasil menambahkan akses premium kepada *@${hl[0].split('@')[0]}* selama *${hl[1]} hari*.\n\n*Premium : ${msToDate(db.data.users[hl[0]].premiumDate - now)}*`,m,{ contextInfo: { mentionedJid: [hl[0]] } })
+  conn.reply(hl[0],`*❏ UPGRADE PREMIUM*\n\nBerhasil menambahkan akses premium kepada *@${hl[0].split('@')[0]}* selama *${hl[1]} hari*.\n\n*Premium : ${msToDate(db.data.users[hl[0]].premiumDate - now)}*`,m,{ contextInfo: { mentionedJid: [hl[0]] } }) 
 
 }
 handler.help = ['prem *@tag|days*']
