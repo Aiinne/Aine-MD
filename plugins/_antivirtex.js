@@ -26,7 +26,14 @@ handler.all = async function (m, { isBlocked }) {
    conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
    }
    
-   // tambahin sendiri code virus WhatsApp..
+   // tambahin sendiri code virus WhatsApp.. Contohnya di bawah
+  
+   // let abc1 = /(virusnya)/i
+   // let abc2 = abc1.exec(m.text)
+   // if (abc2 && !m.fromMe) {
+   // conn.sendMessage(m.chat, { delete: m.key })
+   // conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
+   // }
 }
 
 handler.botAdmin = true
