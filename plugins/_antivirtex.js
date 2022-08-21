@@ -8,18 +8,21 @@ handler.all = async function (m, { isBlocked }) {
    let regs = /(ผิดุท้เึางืผิดุท้เึางื)/i
    let isVertexThai = regs.exec(m.text)
    if (isVertexThai && !m.fromMe) {
+   conn.sendMessage(m.chat, { delete: m.key })
    conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
    }
    
    let regk = /(♚㜸ཽཽࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧ͢͢㜺ࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧ㜸ཽཽཽ͢͢͢♚)/i
    let isVertexSymbol = regk.exec(m.text)
    if (isVertexSymbol && !m.fromMe) {
+   conn.sendMessage(m.chat, { delete: m.key })
    conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
    }
    
    let regp = /(๒๒)/i
    let isVertexsThai= regp.exec(m.text)
    if (isVertexsThai && !m.fromMe) {
+   conn.sendMessage(m.chat, { delete: m.key })
    conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
    }
    
