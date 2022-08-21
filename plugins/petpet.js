@@ -1,9 +1,7 @@
-/*
-PetPet GIF Generator by https://github.com/balhisyhrl
-*/
 const uploadImage = require('../lib/uploadImage')
 const fetch = require('node-fetch')
-const WSF = require('wa-sticker-formatter')
+const { sticker } = require('../lib/sticker')
+
 let fs = require('fs')
 let handler = async (m, { conn, usedPrefix }) => {
   let q = m.quoted ? m.quoted : m
@@ -22,26 +20,16 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = await res.json()
     if(json.status == false) throw `error`
     let imggiff = json.result
-    m.reply(`Tunggu kk`)
-    //m.reply(imggiff)
-    wsf = new WSF.Sticker(imggiff, {
-          pack: global.packname,
-          author: global.author,
-          crop: true,
-        })
-    await wsf.build()
-    const sticBuffer = await wsf.get()
-    conn.sendMessage(m.chat, { sticker: sticBuffer }, {
-      quoted: m,
-      mimetype: 'image/webp',
-      ephemeralExpiration: 86400
-    })
+    m.reply(`Sedang diproses..`)
+    let stiker = await sticker(false, imggiff, packname, author)
+    conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
   } catch(e){
-    m.reply(`ERROR`)
+    m.reply(`*ERROR!*`)
   }
 }
 handler.help = ['petpet']
 handler.tags = ['sticker']
 handler.command = /^petpet$/i
+handler.limit = true
 
 module.exports = handler
