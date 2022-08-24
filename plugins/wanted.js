@@ -11,7 +11,7 @@ let handler = async (m, { conn, text }) => {
   let img = await q.download()
   let url = await uploadImage(img)
   let wanted = `https://api.dhamzxploit.my.id/api/canvas/wanted?url=${url}`
-  let stiker = await sticker(null, wanted, global.packname, global.author)
+  let stiker = await sticker(null, wanted, packname, author)
   if (stiker) return conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, false, { asSticker: true })
  } catch (e) {
    m.reply('Conversion Failed')
