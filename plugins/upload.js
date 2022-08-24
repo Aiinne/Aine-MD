@@ -8,7 +8,7 @@ let handler = async (m) => {
   let media = await q.download()
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4\/webp/.test(mime)
   let link = await (isTele ? uploadImage : uploadFile)(media)
-  m.reply(`*${global.wm}*
+  m.reply(`*${wm}*
 
 ${link}
 ${media.length} Byte(s)

@@ -1,23 +1,3 @@
-/*const { wikipedia } = require('@bochilteam/scraper')
-let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw `Contoh penggunaan ${usedPrefix}${command} Minecraft`
-  let json = await wikipedia(text)
-  m.reply(`
-*${json.title}*
-${json.img}
-
-${json.articles}
-`.trim())
-}
-handler.help = ['wikipedia'].map(v => v + ' <apa>')
-handler.tags = ['internet']
-handler.command = /^(wiki|wikipedia)$/i
-
-module.exports = handler*/
-
-
-
-
 let axios = require("axios")
 let fetch = require("node-fetch")
 let cheerio = require("cheerio")
