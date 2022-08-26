@@ -15,26 +15,16 @@ try {
             const count = args[1] && args[1].length > 0 ? Math.max(parseInt(args[1]), 1) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
             switch (type) {
             	case 'exp':
-                            let dod = `${pickRandom(['Berhasil', 'Sukses', 'Aktif'])}`.trim()
-                            let bcd = `Cheat XP ${dod}`.trim()
                             db.data.users[who].exp += count * 1
-                            conn.reply(m.chat, bcd, m)
-                            conn.reply(m.chat, `Menambahkan ${count * 1} XP Kedalam Database`, m)
+                            conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)
 break                       // Perhatian Cheat exp bisa membuat database kalian error!!
                             // Minimal cheat exp 1000000000000 Batas cheat exp tidak boleh lebih!!
                 case 'level':
-                            let did = `${pickRandom(['Berhasil', 'Sukses', 'Aktif'])}`.trim()
-                            let ahh = `Cheat Level ${did}`.trim()
                             db.data.users[who].level += count * 1
-                            conn.reply(m.chat, ahh, m)
-                            conn.reply(m.chat, `Menambahkan ${count * 1} Level Kedalam Database`, m)
-break                       
+                            conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)                      
                 case 'limit':
-                            let dud = `${pickRandom(['Berhasil', 'Sukses', 'Aktif'])}`.trim()
-                            let uhh = `Cheat Limit ${dud}`.trim()
                             db.data.users[who].limit += count * 1
-                            conn.reply(m.chat, uhh, m)
-                            conn.reply(m.chat, `Menambahkan ${count * 1} Limit Kedalam Database`, m)
+                            conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)
 break
                 default:
                     return conn.reply( m.chat, cok, m)
