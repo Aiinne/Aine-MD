@@ -20,15 +20,15 @@ try {
                             global.db.data.users[who].exp += count * 1
                             conn.reply(m.chat, bcd, m)
                             conn.fakeReply(m.chat, `Menambahkan ${count * 1} XP Kedalam Database`, '0@s.whatsapp.net', `Cheat XP ${dod}`, 'status@broadcast')
-break
-
+break                       // Perhatian Cheat exp bisa membuat database kalian error!!
+                            // Minimal cheat exp 1000000000000 Batas cheat exp tidak boleh lebih!!
                 case 'level':
                             let did = `${pickRandom(['Berhasil', 'Sukses', 'Aktif'])}`.trim()
                             let ahh = `Cheat Level ${did}`.trim()
                             global.db.data.users[who].level += count * 1
                             conn.reply(m.chat, ahh, m)
                             conn.fakeReply(m.chat, `Menambahkan ${count * 1} Level Kedalam Database`, '0@s.whatsapp.net', `Cheat Level ${did}`, 'status@broadcast')
-break
+break                       
                 case 'limit':
                             let dud = `${pickRandom(['Berhasil', 'Sukses', 'Aktif'])}`.trim()
                             let uhh = `Cheat Limit ${dud}`.trim()
