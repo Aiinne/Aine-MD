@@ -15,14 +15,17 @@ try {
             const count = args[1] && args[1].length > 0 ? Math.max(parseInt(args[1]), 1) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
             switch (type) {
             	case 'exp':
+                            if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
                             db.data.users[who].exp += count * 1
                             conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)
 break                       // Perhatian Cheat exp bisa membuat database kalian error!!
                             // Minimal cheat exp 1000000000000 Batas cheat exp tidak boleh lebih!!
                 case 'level':
+                            if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
                             db.data.users[who].level += count * 1
                             conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)                      
                 case 'limit':
+                            if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
                             db.data.users[who].limit += count * 1
                             conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)
 break
