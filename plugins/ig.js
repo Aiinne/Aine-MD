@@ -21,7 +21,7 @@ return isurl ? (await require('axios').get('https://tinyurl.com/api-create.php?u
 }
 
 
-/*const { instagramdl } = require('@bochilteam/scraper')
+const { instagramdl } = require('@bochilteam/scraper')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0]) throw `*Perintah ini untuk mengunduh postingan ig/reel/tv, bukan untuk highlight/story!*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/BmjK1KOD_UG/?utm_medium=copy_link`
   if (!args[0].match(/https:\/\/www.instagram.com\/(p|reel|tv)/gi)) throw `*Link salah! Perintah ini untuk mengunduh postingan ig/reel/tv, bukan untuk highlight/story!*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/CQU21b0JKwq/`
@@ -43,10 +43,9 @@ handler.premium = false
 
 module.exports = handler
 
-const delay = time => new Promise(res => setTimeout(res, time))*/
+const delay = time => new Promise(res => setTimeout(res, time))
 
 
-/*
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0]) throw `*Perintah ini untuk mengunduh postingan ig/reel/tv, bukan untuk highlight/story!*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/BmjK1KOD_UG/?utm_medium=copy_link`
@@ -66,4 +65,4 @@ handler.group = true
 
 module.exports = handler
 
-const delay = time => new Promise(res => setTimeout(res, time))*/
+const delay = time => new Promise(res => setTimeout(res, time))
