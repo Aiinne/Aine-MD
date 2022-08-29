@@ -40,7 +40,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
     let br = JSON.stringify(res)
     let json = JSON.parse(br)
     let answer = res.data((v, i) => `_*PERTANYAAN KE ${i + 1}*_\n${v.pertanyaan}\n${v.jawaban((v,i) => `*JAWABAN KE ${i + 1}*\n${v.text}`).join('\n')}`).join('\n\n•------------•\n\n')
- //m.reply(answer)
+  '//   m.reply(answer)'
 	client.sendMessage(m.chat, answer, text, {quoted: m, detectLinks: false})
 	console.log(res)
 	})
