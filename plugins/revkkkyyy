@@ -1,0 +1,14 @@
+let handler = async m => m.reply(`
+hai ka aku revky
+`.trim()) // Tambah sendiri kalo mau
+handler.help = ['revky']
+handler.tags = ['rev']
+handler.command = /^rev(ky|gay)$/i
+
+module.exports = handler
+
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'kenapa ka',
+                                    id: '/kenapa ka'
