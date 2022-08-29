@@ -9,3 +9,9 @@ handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
 
 module.exports = handler
+
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'kenapa ka',
+                                    id: '/kenapa ka'
