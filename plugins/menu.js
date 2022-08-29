@@ -158,7 +158,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.sendButton(m.chat, text.trim(), 'Made with ♡ by Aine', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
-    /*conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
       ['Owner', '/owner']
@@ -197,7 +197,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                         }
                     }
                 }), { userJid: m.chat, quoted: m })
-                conn.relayMessage(m.chat, template.message, { messageId: template.key.id })*/
+                conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
