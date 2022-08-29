@@ -41,7 +41,7 @@ handler.command = /^(igstalk)$/i
 module.exports = handler
 */
 
-/*let igs = require("../lib/scraper_igstalk")
+let igs = require("../lib/scraper_igstalk")
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 	if (!text) throw 'Uhm...username nya mana?'
