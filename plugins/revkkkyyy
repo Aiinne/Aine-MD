@@ -1,12 +1,9 @@
 let handler = async m => m.reply(`
-╭─「 Donasi • Pulsa 」
-│ •  [6281802857821]
-│ •  [6281802857821]
-╰────
+iya ka revky disini
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']
 handler.tags = ['info']
-handler.command = /^dona(te|si)$/i
+handler.command = /^rev(ky|gay)$/i
 
 module.exports = handler
 
