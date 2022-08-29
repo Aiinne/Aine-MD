@@ -30,7 +30,7 @@ handler.tags = ['internet']
 handler.command = /^brainly$/i
 handler.limit = true
 
-module.exports = handler*/
+module.exports = handler
 
 const { MessageType } = require('@adiwajshing/baileys')
 const brainly = require('brainly-scraper')
