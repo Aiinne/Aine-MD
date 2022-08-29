@@ -4,9 +4,7 @@ hai ka aku revky
 handler.help = ['revky']
 handler.tags = ['rev']
 handler.command = /^rev(ky|gay)$/i
-
 module.exports = handler
-
                                 }
                             }, {
                                 quickReplyButton: {
