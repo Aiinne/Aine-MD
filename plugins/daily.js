@@ -20,16 +20,14 @@ let handler = async (m, { conn, isPrems }) => {
 handler.help = ['daily']
 handler.tags = ['rpgabsen']
 handler.command = /^(daily)$/i
-handler.owner = false
+handler.owner = true
 handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
 
-handler.owner = true
-
-handler.admin = false
-handler.botAdmin = false
+handler.admin = true
+handler.botAdmin = true
 
 handler.fail = null
 handler.money = 0
