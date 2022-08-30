@@ -19,6 +19,7 @@ Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}who untuk bantuan
 Bonus: ${poin} XP 
 TiketCoin: ${tiketcoin} Tiketcoin
+*PREMIUM FEATURE BY REVSV*
 *REVKYUWU*
 `.trim()
     conn.siapakahaku[id] = [
