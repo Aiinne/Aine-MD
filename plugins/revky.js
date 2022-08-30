@@ -1,7 +1,7 @@
 let fs = require('fs')
 const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn }) => {
-// await conn.sendMessage(m.chat, { hai ka aku revky}, m)
+await 'conn.sendMessage(m.chat, { hai ka aku revky}, m)'
 }
 
 handler.customPrefix = /^(rev|revk|revky|rep|repii|repkii|revv|revki)$/i
