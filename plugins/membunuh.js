@@ -1,7 +1,7 @@
 
 // let pajak = 0.02
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-let dapat = (Math.floor(Math.random() * 10000))
+let dapat = (Math.floor(Math.random() * 1000000000000000000))
 let healtu = (Math.floor(Math.random() * 100))
 let nomors = m.sender
   let who
@@ -10,7 +10,7 @@ let nomors = m.sender
   if (!who) throw 'Tag salah satu lah'
   if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
   let __timers = (new Date - global.db.data.users[m.sender].lastbunuhi)
-  let _timers = (3600000 - __timers) 
+  let _timers = (36000 - __timers) 
   let timers = clockString(_timers)
   let users = global.db.data.users
   if (new Date - global.db.data.users[m.sender].lastbunuhi > 3600000){
@@ -29,6 +29,8 @@ handler.tags = ['rpg']
 handler.command = /^membunuh$/
 handler.limit = true
 handler.group = true
+handler.admin = true
+handler.owner = true
 
 module.exports = handler
 
