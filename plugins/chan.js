@@ -1,4 +1,6 @@
-'iya ka, ada apa?'
+let handler = async m => m.reply('PENGEN CURI YA?!`.trim())
+
+
 handler.help = ['sc']
 handler.tags = ['sc']
 handler.command = /^(sc)$/i
