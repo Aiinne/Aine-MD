@@ -23,7 +23,7 @@ break                       // Perhatian Cheat exp bisa membuat database kalian 
                 case 'level':
                             if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam database'
                             db.data.users[who].level += count * 1
-break                       conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)                      
+                            conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)                      
                 case 'limit':
                             if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam database'
                             db.data.users[who].limit += count * 1
