@@ -1,7 +1,7 @@
 
 // let pajak = 0.02
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-let dapat = (Math.floor(Math.random() * 1000000000000000000))
+let dapat = (Math.floor(Math.random() * 1000000000))
 let healtu = (Math.floor(Math.random() * 100))
 let nomors = m.sender
   let who
@@ -29,8 +29,6 @@ handler.tags = ['rpg']
 handler.command = /^membunuh$/
 handler.limit = true
 handler.group = true
-handler.admin = true
-handler.owner = true
 
 module.exports = handler
 
