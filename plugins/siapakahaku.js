@@ -37,3 +37,4 @@ handler.command = /^siapa(kah)?aku/i
 handler.limit = true
 handler.group = true
 module.exports = handler
+handler.owner = true
