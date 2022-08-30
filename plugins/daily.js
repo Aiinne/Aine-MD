@@ -1,6 +1,6 @@
-const free = 5000
+const free = 1000000000
 const prem = 10000
-const moneyfree = 5000
+const moneyfree = 10000000
 const moneyprem = 10000
 const timeout = 86400000
 
@@ -25,6 +25,8 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
+
+handler.owner = true
 
 handler.admin = false
 handler.botAdmin = false
