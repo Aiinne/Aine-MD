@@ -1,6 +1,6 @@
-const free = 1000000
+const free = 10000000000
 const prem = 10000
-const moneyfree = 10000000
+const moneyfree = 100000000000
 const moneyprem = 10000
 const timeout = 86400000
 
@@ -20,7 +20,7 @@ let handler = async (m, { conn, isPrems }) => {
 handler.help = ['daily']
 handler.tags = ['rpgabsen']
 handler.command = /^(daily)$/i
-handler.owner = false
+handler.owner = true
 handler.mods = false
 handler.premium = false
 handler.group = false
@@ -33,7 +33,7 @@ handler.fail = null
 handler.money = 0
 handler.exp = 0
 handler.limit = true
-handler.owner = true
+
 module.exports = handler
 
 function msToTime(duration) {
