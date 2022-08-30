@@ -1,8 +1,9 @@
-'iya ka, ada apa?'
+let handler = async m => m.reply('PENGEN CURI YA?!`.trim())
 
-handler.help = ['revky']
-handler.tags = ['revky']
-handler.command = /^(revky)$/i
+
+handler.help = ['sc']
+handler.tags = ['sc']
+handler.command = /^(sc)$/i
 handler.limit = true
 handler.group = true
 module.exports = handler
