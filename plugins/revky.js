@@ -4,6 +4,6 @@ let handler = async m => m.reply(`
 
 handler.help = ['revky']
 handler.tags = ['revky']
-handler.command = /^revky
+handler.command = /^revky)$/i
 handler.limit = true
 handler.group = true
