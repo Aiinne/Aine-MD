@@ -32,5 +32,6 @@ handler.tags = ['game']
 handler.command = /^tebakkata/i
 handler.limit = true
 handler.group = true
+handler.owner = true
 
 module.exports = handler
