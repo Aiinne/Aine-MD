@@ -29,6 +29,11 @@ break                       // Perhatian Cheat exp bisa membuat database kalian 
                             db.data.users[who].limit += count * 1
                             conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)
 break
+                case 'money':
+                            if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam database'
+                            db.data.users[who].limit += count * 1
+                            conn.reply(m.chat, `Berhasil menambahkan ${count * 1} ${type} kedalam database target`, m)
+break
                 default:
                     return conn.reply( m.chat, cok, m)
             }
