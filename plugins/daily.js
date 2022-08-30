@@ -33,7 +33,7 @@ handler.fail = null
 handler.money = 0
 handler.exp = 0
 handler.limit = true
-
+handler.owner = true
 module.exports = handler
 
 function msToTime(duration) {
