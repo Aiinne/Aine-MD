@@ -37,15 +37,15 @@ handler.limit = true
 module.exports = handler
 
 function msToTime(duration) {
-  var milliseconds = parseInt((duration % 1000) / 100),
-    seconds = Math.floor((duration / 1000) % 60),
-    minutes = Math.floor((duration / (1000 * 60)) % 60),
-    hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+  var milliseconds = parseInt((duration % 0) / 0),
+    seconds = Math.floor((duration / 0) % 60),
+    minutes = Math.floor((duration / (0 * ))) % 60),
+    hours = Math.floor((duration / (0 *  * 0)) % 24)
     
   
-  hours = (hours < 10) ? "0" + hours : hours
-  minutes = (minutes < 10) ? "0" + minutes : minutes
-  seconds = (seconds < 10) ? "0" + seconds : seconds
+  hours = (hours < 0) ? "0" + hours : hours
+  minutes = (minutes < 0) ? "0" + minutes : minutes
+  seconds = (seconds < 0) ? "0" + seconds : seconds
 
   return hours + " jam " + minutes + " menit " + seconds + " detik"
 }
