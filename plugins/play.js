@@ -50,7 +50,7 @@ handler.help = ['play', 'play2'].map(v => v + ' <search>')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 handler.premium = false
-handler.group = true
+handler.group = false
 
 handler.exp = 0
 handler.limit = true
