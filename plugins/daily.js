@@ -11,7 +11,7 @@ let handler = async (m, { conn, isPrems }) => {
         global.db.data.users[m.sender].exp += isPrems ? prem : free
         global.db.data.users[m.sender].money += isPrems ? moneyprem : moneyfree
        // global.db.data.users[m.sender].potion += 5
-        conn.reply(m.chat, `hai owner, revky asus:\n\n+${isPrems ? prem : free} Exp\n+${isPrems ? moneyprem : moneyfree} Money`, m)
+        conn.reply(m.chat, `duit mainan:\n\n+${isPrems ? prem : free} Exp\n+${isPrems ? moneyprem : moneyfree} Money`, m)
         global.db.data.users[m.sender].lastclaim = new Date * 1
         setTimeout(() => {
 					conn.reply(m.chat, `Daily sudah bisa di dapatkan kembali`, m)
