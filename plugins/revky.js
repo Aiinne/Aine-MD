@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-hello! world~
+_*hello! world~*_
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['october']
 handler.tags = ['octo']
