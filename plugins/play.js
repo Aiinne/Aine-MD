@@ -1,4 +1,4 @@
-let limit = 30
+let limit = 50
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
