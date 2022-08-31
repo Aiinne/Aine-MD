@@ -349,4 +349,3 @@ var percent = match[1] || 5
 if (!message.reply_message || !message.reply_message.image) return await message.sendReply("*Wrong format*\n*Reply to image*\n*.blur*\n*.blur 25*")
 await message.sendReply(await blur(await message.reply_message.download(),percent),'image');
 })
-Footer
