@@ -1,14 +1,50 @@
-let handler = async m => m.reply(`
-iya ka revky disini
-`.trim()) // Tambah sendiri kalo mau
-handler.help = ['donasi']
-handler.tags = ['info']
-handler.command = /^rev(ky|gay)$/i
 
-module.exports = handler
 
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'kenapa ka',
-                                    id: '/kenapa ka'
+
+
+
+
+
+
+
+
+
+title
+glowsliced
+whitegold
+batman
+greenhorror
+glitch
+minion
+matrix
+road
+erodedmetal
+carbon
+joker
+orange
+stone
+retro
+sliced
+2glitch
+sparkle
+neon
+thunder
+bokeh
+devil
+blackpink
+2retro
+summer
+demon
+lava
+paper
+space
+8bit
+camerica
+pencil
+foggy
+graffiti
+2graffiti
+3graffiti
+phub
+marvel
+2marvel
