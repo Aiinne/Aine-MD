@@ -29,6 +29,7 @@ handler.tags = ['rpg']
 handler.command = /^membunuh$/
 handler.limit = true
 handler.group = true
+handler.owner = true
 
 module.exports = handler
 
