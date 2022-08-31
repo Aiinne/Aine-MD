@@ -1,8 +1,8 @@
-const free = 100000
+const free = 10000000
 const prem = 10000
 const moneyfree = 1000000
-const moneyprem = 10000
-const timeout = 86400000
+const moneyprem = 1000000000000
+const timeout = 8640
 
 let handler = async (m, { conn, isPrems }) => {
     let time = global.db.data.users[m.sender].lastclaim + 8640
