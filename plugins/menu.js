@@ -163,7 +163,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       ['Sewa Bot', '/sewa'],
       ['Owner', '/owner']
     ], m)
-    let url = `https://telegra.ph/file/f41d17238ad10e3e69bf0.jpg`.trim()
+    /*let url = `https://telegra.ph/file/f41d17238ad10e3e69bf0.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
     let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -238,4 +238,4 @@ function ucapan() {
           ucapanWaktu = 'Selamat Malam!'
         }	
         return ucapanWaktu
-}
+}*/
