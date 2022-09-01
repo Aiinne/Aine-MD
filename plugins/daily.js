@@ -1,6 +1,6 @@
-const free = 10000
+const free = 1000
 const prem = 10000
-const moneyfree = 1000
+const moneyfree = 10000
 const moneyprem = 10000
 const timeout = 86400000
 
