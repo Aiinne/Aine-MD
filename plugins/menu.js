@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
       ['Owner', '/owner']
-    ], m)*/
+    ], m)
     let url = `https://telegra.ph/file/f41d17238ad10e3e69bf0.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
