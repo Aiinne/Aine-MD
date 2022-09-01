@@ -4,12 +4,12 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let id = m.chat
   if (id in conn.kuis) return conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.kuis[id][0])
   conn.kuis[id] = [
-    await conn.reply(m.chat,`「 KUIS 」\n\nPertanyaan :\n${pickRandom(kuis)}\n\nWaktu : 30.00 Detik\nBonus : 10000 XP`, m),
+    await conn.reply(m.chat,`「 KUIS 」\n\nPertanyaan :\n${pickRandom(kuis)}\n\nWaktu : 25:00 Detik\nBonus : 10000 XP`, m),
     kuis, 4,
     setTimeout(() => {
       if (conn.kuis[id]) conn.sendButton(m.chat, `Waktu habis!\n\nCoba Lagi Lain Waktu`, wm, null, [['Kuis', '.kuis']], m)
       delete conn.kuis[id]
-    }, 30000)
+    }, 25000)
   ]
 }
 handler.help = ['kuis']
