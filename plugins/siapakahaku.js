@@ -27,11 +27,7 @@ TiketCoin: ${tiketcoin} Tiketcoin
         setTimeout(() => {
             if (conn.siapakahaku[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, conn.siapakahaku[id][0])
             delete conn.siapakahaku[id]               
-           {
-             quickReplyButton: {
-               displayText: 'siapakahaku',
-               id: '.siapakahaku',
-        }, timeout)
+                   }, timeout)
     ]
 }
 handler.help = ['siapakahaku']
