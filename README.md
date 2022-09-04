@@ -1,5 +1,10 @@
 # Aine-MD
 
+
+# NOTE
+*pihak team developer dan team aine tidak beroperasi kembali karena script ini di perjual belikan*
+
+
 This script is free, if caught sold, this script will be deleted immediately.
 Don't forget to follow my github
 
