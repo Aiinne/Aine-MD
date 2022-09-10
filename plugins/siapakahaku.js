@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 
-let timeout = 180000
-let poin = 500
+let timeout = 25000
+let poin = 10000
 let tiketcoin = 1
 let handler = async (m, { conn, usedPrefix }) => {
     conn.siapakahaku = conn.siapakahaku ? conn.siapakahaku : {}
@@ -19,14 +19,15 @@ Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}who untuk bantuan
 Bonus: ${poin} XP 
 TiketCoin: ${tiketcoin} Tiketcoin
-`.trim()
+*PREMIUM FEATURE BY REVSV*
+*REVKYUWU*`.trim()
     conn.siapakahaku[id] = [
         await conn.reply(m.chat, caption, m),
         json, poin,
         setTimeout(() => {
             if (conn.siapakahaku[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, conn.siapakahaku[id][0])
-            delete conn.siapakahaku[id]
-        }, timeout)
+            delete conn.siapakahaku[id]               
+                   }, timeout)
     ]
 }
 handler.help = ['siapakahaku']

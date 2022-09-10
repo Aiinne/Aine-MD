@@ -1,4 +1,4 @@
-let limit = 30
+let limit = 50
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
@@ -50,7 +50,7 @@ handler.help = ['play', 'play2'].map(v => v + ' <search>')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 handler.premium = false
-handler.group = true
+handler.group = false
 
 handler.exp = 0
 handler.limit = true

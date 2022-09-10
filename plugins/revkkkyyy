@@ -1,0 +1,6 @@
+`.trim()) // Tambah sendiri kalo mau
+handler.help = ['maker']
+handler.tags = ['maker']
+handler.command = /^maker)$/i
+
+module.exports = handler

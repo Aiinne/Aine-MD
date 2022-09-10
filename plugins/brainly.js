@@ -14,7 +14,7 @@ handler.limit = true
 module.exports = handler
 
 
-/*const Brainly = require('brainly-scraper-v2')
+const Brainly = require('brainly-scraper-v2')
 const brain = new Brainly("id")
 let handler = async function (m, { text, usedPrefix, command }) {
   if (!text) throw `uhm.. soalnya mana?\n\ncontoh:\n${usedPrefix + command} apa itu javascript?`
@@ -30,9 +30,8 @@ handler.tags = ['internet']
 handler.command = /^brainly$/i
 handler.limit = true
 
-module.exports = handler*/
+module.exports = handler
 
-/*
 const { MessageType } = require('@adiwajshing/baileys')
 const brainly = require('brainly-scraper')
 let handler = async function (m, { text, usedPrefix, command }) {
@@ -41,7 +40,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
     let br = JSON.stringify(res)
     let json = JSON.parse(br)
     let answer = res.data((v, i) => `_*PERTANYAAN KE ${i + 1}*_\n${v.pertanyaan}\n${v.jawaban((v,i) => `*JAWABAN KE ${i + 1}*\n${v.text}`).join('\n')}`).join('\n\n•------------•\n\n')
- //   m.reply(answer)
+  '//   m.reply(answer)'
 	client.sendMessage(m.chat, answer, text, {quoted: m, detectLinks: false})
 	console.log(res)
 	})
@@ -52,9 +51,9 @@ handler.tags = ['internet']
 handler.command = /^brainly$/i
 handler.limit = true
 
-module.exports = handler*/
+module.exports = handler
 
-/*
+
 const brainly = require('brainly-scraper-v2')
 let handler = async function (m, { text }) {
   if (!text) throw 'Soalnya?'
@@ -67,4 +66,4 @@ handler.tags = ['internet']
 
 handler.command = /^brainly$/i
 
-module.exports = handler*/
+module.exports = handler

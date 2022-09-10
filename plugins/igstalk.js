@@ -1,4 +1,4 @@
-/*let fetch = require('node-fetch')
+let fetch = require('node-fetch')
 let handler = async (m, { conn, args }) => {
   if (!args[0]) throw 'Uhm...username nya mana?'
   let res = await fetch(global.API('xteam', '/dl/igstalk', {
@@ -41,7 +41,7 @@ handler.command = /^(igstalk)$/i
 module.exports = handler
 */
 
-/*let igs = require("../lib/scraper_igstalk")
+let igs = require("../lib/scraper_igstalk")
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 	if (!text) throw 'Uhm...username nya mana?'
@@ -66,7 +66,7 @@ handler.tags = ['downloader']
 handler.command = /^(igstalk)$/i
 handler.limit = true
 
-module.exports = handler*/
+module.exports = handler
 
 
 
