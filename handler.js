@@ -883,6 +883,9 @@ module.exports = {
         switch (action) {
             case 'add':
             case 'remove':
+		case 'leave':
+		case 'invite':
+		case 'invite_v4':
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                     for (let user of participants) {
